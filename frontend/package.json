@@ -9,21 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-=======
     "leaflet": "^1.9.4",
     "next": "15.2.1",
     "next-auth": "^4.24.11",
     "frontend": "file:",
     "marked": "^15.0.7",
->>>>>>> 628a513177b58ea56f6fdda0c700d5b75940cd09
-    "next": "15.2.1",
-    "next-auth": "^4.24.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "react-leaflet": "^5.0.0",
-    "react-icons": "^5.5.0"
+    "react-leaflet": "^5.0.0"
+
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
