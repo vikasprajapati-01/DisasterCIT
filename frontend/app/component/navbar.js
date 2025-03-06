@@ -24,6 +24,7 @@ export default function Navbar() {
           <li><a href="#services" className="hover:text-gray-400 cursor-pointer">Services</a></li>
           <li><a href="#about" className="hover:text-gray-400 cursor-pointer">About</a></li>
           <li><a href="#contact" className="hover:text-gray-400 cursor-pointer">Contact</a></li>
+          <li><Link href="/prediction">Prediction</Link></li>
           <li>
             <Link href="/login">
               <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-bold transition-all">

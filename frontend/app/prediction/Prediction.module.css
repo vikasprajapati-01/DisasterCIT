@@ -1,0 +1,97 @@
+/* Set the background color of the page */
+body {
+    background-color: #0a1128;
+}
+.container {
+    max-width: 450px; /* 2xl screen size (672px) */
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffff; /* Dark gray background */
+    color: #0a1128;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Title styles */
+  .title {
+    font-size: 2rem; /* 3xl size */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form spacing */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Label styles */
+  .label {
+    font-size: 0.875rem; /* Small size */
+    font-weight: 500;
+    color: #000000; /* Light gray text */
+  }
+  
+  /* Input field styles */
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border-radius: 0.375rem;
+    border: 1px solid #4b5563; /* Darker border */
+    background-color: #2d3748; /* Slightly lighter gray for input */
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+  }
+  
+  /* Button styles */
+  .button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b82f6; /* Blue background */
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .button:disabled {
+    background-color: #cbd5e1; /* Gray background when disabled */
+    cursor: not-allowed;
+  }
+  
+  /* Result and error text */
+  .result, .error {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .result h2 {
+    font-size: 1.125rem; /* Larger text for the heading */
+    font-weight: 600;
+  }
+  
+  .result p {
+    font-size: 1.25rem; /* Larger text for the result */
+    font-weight: bold;
+  }
+  
+  .error {
+    color: #f87171; /* Red color for error */
+  }
+  
