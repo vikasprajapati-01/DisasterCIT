@@ -16,6 +16,24 @@ export const authOptions = {
   callbacks: {
     async session({ session, token }) {
       session.user.id = token.sub;
+
+      // Fetch User's Location
+      try {
+        const res = await fetch("https://ipinfo.io/json?token=" + process.env.IPINFO_TOKEN);
+        const data = await res.json();
+
+        session.user.location = {
+          city: data.city || null,
+          region: data.region || null,
+          country: data.country || null,
+          lat: data.loc ? data.loc.split(",")[0] : null,
+          lon: data.loc ? data.loc.split(",")[1] : null,
+        };
+      } catch (error) {
+        console.error("Error fetching location:", error);
+        session.user.location = null;
+      }
+
       return session;
     },
   },

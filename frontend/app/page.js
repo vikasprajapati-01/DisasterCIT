@@ -2,8 +2,13 @@
 import Navbar from "./component/navbar";
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
+import dynamic from "next/dynamic";
+
+const DisasterMap = dynamic(() => import("./component/DisasterMap"), { ssr: false });
 
 export default function Home() {
+  
+
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_center,_#0a1128,_#001f3f)] text-white">
       <Navbar />
@@ -27,7 +32,16 @@ export default function Home() {
         <p className="text-lg text-gray-300 max-w-2xl mx-auto">
           Our platform provides real-time disaster alerts, emergency contacts, and safety measures to help individuals stay prepared during crises.
         </p>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto mt-4">
+          We utilize advanced <span className="text-blue-400 font-semibold">Machine Learning models</span> to predict potential disasters in your area, 
+          providing early warnings to ensure safety and preparedness.
+        </p>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto mt-4">
+          Our integrated <span className="text-blue-400 font-semibold">AI-powered chatbot</span> is available to answer your queries and provide 
+          valuable suggestions on how to stay safe and take precautions against upcoming disasters.
+        </p>
       </section>
+
 
       {/* How It Works Section */}
       <section id="how-it-works" className="py-20 px-6 bg-gray-800 text-center">
@@ -55,7 +69,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <DisasterMap /> 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-gray-800 text-center">
         <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
