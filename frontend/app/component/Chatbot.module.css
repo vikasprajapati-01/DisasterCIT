@@ -1,0 +1,81 @@
+.chatbotContainer {
+    max-width: 96%;
+    margin: 0 5px;
+  }
+  
+  .chatbotTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #101010;
+  }
+  
+  .messageBox {
+    border: 1px solid #101010;
+    padding: 1rem;
+    height: 24rem;
+    overflow-y: auto;
+    background-color: #f3f4f6;
+    border-radius: 0.375rem;
+    color: black;
+  }
+  
+  .message {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .user {
+    text-align: right;
+    justify-content: right;
+    background-color: #a5c9f7;
+  }
+  
+  .ai {
+    text-align: left;
+    justify-content: left;
+    background-color: #D3D3D3;
+  }
+  
+  .inputContainer {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  
+  .inputField {
+    border: 1px solid #101010;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    background-color: #f9fafb;
+    color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .inputField:focus {
+    background-color: #ffffff;
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  .inputField:disabled {
+    background-color: #f3f4f6;
+    border-color: #d1d5db;
+    color: #9ca3af;
+  }
+  
+  .sendButton {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .sendButton:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+  }
+  

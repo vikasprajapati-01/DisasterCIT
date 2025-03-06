@@ -1,0 +1,29 @@
+.chatbotButton {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatbotButton:hover {
+    background-color: #60a5fa;
+  }
+  
+  .chatbotContainer {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    padding: 1.5rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translate(-12px, 20px);
+    transition: all 0.3s ease-in-out;
+  }
