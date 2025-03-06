@@ -16,7 +16,15 @@ export default function LoginPage() {
   }, [session, router]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white relative">
+      {/* Back to Home Button */}
+      <button
+        onClick={() => router.push("/")}
+        className="absolute top-5 left-5 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md"
+      >
+        ← Back to Home
+      </button>
+
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center w-96">
         <h1 className="text-2xl font-bold mb-6">Login to Disaster Management</h1>
 
