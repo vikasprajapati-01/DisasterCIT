@@ -3,3 +3,47 @@
 html {
   scroll-behavior: smooth;
 }
+
+.fixed {
+  position: fixed;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.text-white {
+  color: white;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:bg-blue-400:hover {
+  background-color: #60a5fa;
+}
+
+.transition {
+  transition: background-color 0.3s ease;
+}
