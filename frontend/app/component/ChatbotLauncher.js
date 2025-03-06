@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Chatbot from "./Chatbot";
-import styles from "./ChatbotLauncher.module.css";
+import styles from './ChatbotLauncher.module.css'; 
+
 import { FaCommentDots } from "react-icons/fa";
 
 export default function ChatbotLauncher() {
